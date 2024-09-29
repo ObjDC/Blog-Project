@@ -1,21 +1,36 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* Height set to test parallax scrolling for header image (remove later) */
+body,html {
+    height: 200vh;
 }
 
 header {
     width: 100%;
     height: 200px;
-    background-color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/header-image.jpg);
+    background-attachment: fixed;
+    background-position: 50% -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .header-items-container {
     width: 50%;
     height: 100%;
-    background-color: orange;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -25,5 +40,5 @@ header {
 .header-text-wrapper {
     height: auto;
     width: auto;
-    background-color: purple;
+    color: white;
 }

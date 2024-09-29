@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-items-container {
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.header-text-wrapper {
+    height: auto;
+    width: auto;
+    background-color: purple;
+}

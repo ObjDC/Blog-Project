@@ -107,13 +107,13 @@ nav {
 .main-container {
     width: 1000px;
     height: 100%;
-    background-color: orange;
     margin: auto;
+    padding-top: 100px;
 }
 
 .blog-container {
     width: 900px;
     height: 500px;
-    background-color: rgb(58, 42, 42);
+    background-color: rgb(255, 0, 0);
     margin: auto;
 }

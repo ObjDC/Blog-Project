@@ -1,10 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-/* Height set to test parallax scrolling for header image (remove later) */
+
+
 body,html {
-    height: 200vh;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -59,7 +60,7 @@ nav {
 
 .nav-all-container {
     position: relative;
-    width: 70%;
+    width: 94%;
     height: 100%;
 }
 .nav-logo-container {
@@ -100,4 +101,158 @@ nav {
     margin-left: 10px;
 }
 
+.content-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px 70px;
+    color: white;
+}
 
+.main-content {
+    width: 70%;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.subscribe-box {
+    color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.subscribe-box h2 {
+    margin-bottom: 10px;
+}
+
+.subscribe-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subscribe-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--black);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.categories h3 {
+    padding-left: 17px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.categories ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.categories li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+
+.categories .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.adventure { background-color: #ff9900; }
+.design { background-color: #00ccff; }
+.lifestyle { background-color: #66cc33; }
+.javascript { background-color: #ffcc00; }
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.post-image {
+    position: relative;
+}
+
+.post-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #00ccff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.post h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.post p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.post-date {
+    color: #888;
+}
+
+@media screen and (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .main-content, .sidebar {
+        width: 100%;
+    }
+
+    .post {
+        margin-bottom: 40px;
+    }
+}

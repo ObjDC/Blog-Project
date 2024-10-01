@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
-
-body,html {
+body, html {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 :root {
     --black: #292929;
+    --anime: #eb4343;
+    --photography: #2fcf5f;
+    --lifestyle: #f3933a;
+    --philanthropy: #2eb2c9;
 }
 
 header {
@@ -27,7 +31,6 @@ header {
     background-position: 50% -300px;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .header-items-container {
@@ -36,7 +39,6 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
-
 }
 
 .header-text-wrapper {
@@ -49,10 +51,11 @@ nav {
     z-index: 999999;
     width: 100%;
     height: 100px;
-    background-color: rgb(255, 255, 255);
+    background: transparent;
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
-    box-shadow: 0 0 8px rgba(0,0,0,.07);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .07);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,6 +66,7 @@ nav {
     width: 94%;
     height: 100%;
 }
+
 .nav-logo-container {
     width: 150px;
     height: 100%;
@@ -85,7 +89,9 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 20px;
-}.nav-links-container a {
+}
+
+.nav-links-container a {
     text-decoration: none;
     color: var(--black);
 }
@@ -96,6 +102,7 @@ nav {
     background-color: var(--black);
     color: white;
 }
+
 ::before {
     color: white;
     margin-left: 10px;
@@ -110,6 +117,9 @@ nav {
 
 .main-content {
     width: 70%;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar {
@@ -147,6 +157,13 @@ nav {
     border-radius: 5px;
 }
 
+
+
+.categories {
+    position: sticky;
+    top: 120px;
+}
+
 .categories h3 {
     padding-left: 17px;
     margin-bottom: 10px;
@@ -165,6 +182,15 @@ nav {
     color: var(--black);
 }
 
+.categories li a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    border: 1px solid rgb(214, 214, 214);
+}
+
 .categories .dot {
     width: 10px;
     height: 10px;
@@ -172,18 +198,7 @@ nav {
     margin-right: 10px;
 }
 
-.adventure { background-color: #ff9900; }
-.design { background-color: #00ccff; }
-.lifestyle { background-color: #66cc33; }
-.javascript { background-color: #ffcc00; }
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-}
-
 .post {
-
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -208,6 +223,37 @@ nav {
     border-radius: 5px;
     font-size: 14px;
     color: white;
+}
+
+.anime { background-color: var(--anime); }
+.photography { background-color: var(--photography); }
+.lifestyle { background-color: var(--lifestyle); }
+.philanthropy { background-color: var(--philanthropy); }
+
+#cat1:hover {
+    color: white;
+    background-color: var(--anime);
+    border: none;
+}
+#cat2:hover {
+    color: white;
+    background-color: var(--photography);
+    border: none;
+}
+#cat3:hover {
+    color: white;
+    background-color: var(--lifestyle);
+    border: none;
+}
+#cat4:hover {
+    color: white;
+    background-color: var(--philanthropy);
+    border: none;
+}
+
+.active {
+    background-color: var(--black);
+    color: white !important;
 }
 
 .post h2 {
@@ -248,11 +294,27 @@ nav {
         padding: 20px;
     }
 
-    .main-content, .sidebar {
+    .sidebar {
         width: 100%;
+        order: 1;
+    }
+
+    .main-content {
+        width: 100%;
+        order: 2;
     }
 
     .post {
         margin-bottom: 40px;
+    }
+
+    .categories {
+        position: sticky;
+        margin-top: 20px;
+    }
+
+    .categories ul {
+        display: flex;
+        gap: 20px;
     }
 }

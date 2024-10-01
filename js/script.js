@@ -1,10 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const navToggle = document.getElementById("navToggle");
-    const navLinks = document.getElementById("navLinks");
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinksContainer = document.querySelector('.nav-links-container');
 
-    navToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("active"); // Toggle the 'active' class
-        // Add a smooth transition effect for the hamburger icon
-        navToggle.classList.toggle("open");
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navLinksContainer.classList.toggle('active');
     });
 });

@@ -33,7 +33,12 @@
             <div class="nav-logo-container">
                 <h1>Whisper</h1>
             </div>
-            <div class="nav-links-container">
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-links-container" id="navLinks">
                 <a href="">Home</a>
                 <a href="">Blogs</a>
                 <a href="">About</a>
@@ -41,6 +46,8 @@
             </div>
         </div>
     </nav>
+    
+    
 
     <div class="content-container">
         <div class="main-content">
@@ -120,8 +127,20 @@
         </div>
     </div>
     
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinksContainer = document.querySelector('.nav-links-container');
+
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinksContainer.classList.toggle('active');
+            });
+        });
+
+    </script>
 
 
-    <link rel="stylesheet" href="../javascript/script.js">
+    <link rel="stylesheet" href="../js/script.js">
 </body>
 </html>

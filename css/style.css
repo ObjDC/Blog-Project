@@ -424,6 +424,11 @@ nav {
     .nav-toggle.active + .nav-links-container {
         display: flex;
     }
+
+    #contact {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 

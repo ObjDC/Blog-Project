@@ -61,11 +61,6 @@ nav {
     align-items: center;
 }
 
-::before {
-    color: white;
-    margin-left: 10px;
-}
-
 .sidebar {
     width: 50%;
 }
@@ -79,11 +74,12 @@ nav {
 
 .subscribe-box h2 {
     margin-bottom: 10px;
+    font-size: 40px;
 }
 
 .subscribe-box input {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
@@ -93,7 +89,7 @@ nav {
 
 .subscribe-box button {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--black);
     border: none;
     color: white;
@@ -110,6 +106,7 @@ nav {
 }
 
 .categories h3 {
+    font-size: 30px;
     padding-left: 17px;
     margin-bottom: 10px;
     color: var(--black);
@@ -125,7 +122,10 @@ nav {
     display: flex;
     align-items: center;
     color: var(--black);
+    font-size: 20px;
 }
+
+
 
 .categories li a {
     color: var(--black);
@@ -136,9 +136,19 @@ nav {
     border: 1px solid rgb(214, 214, 214);
 }
 
+.categories i {
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+#cat1 i {color: var(--anime);}
+#cat2 i {color: var(--photography);}
+#cat3 i {color: var(--lifestyle);}
+#cat4 i {color: var(--philanthropy);}
+
 .categories .dot {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -178,22 +188,26 @@ nav {
 #cat1:hover {
     color: white;
     background-color: var(--anime);
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 #cat2:hover {
     color: white;
     background-color: var(--photography);
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 #cat3:hover {
     color: white;
     background-color: var(--lifestyle);
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 #cat4:hover {
     color: white;
     background-color: var(--philanthropy);
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+a:hover i {
+    margin-left: 20px;
+    color: white !important;
 }
 
 .post h2 {
@@ -270,6 +284,10 @@ nav {
     color: white;
 }
 
+#contact i {
+    margin-left: 10px;
+}
+
 .content-container {
     display: flex;
     gap: 40px;
@@ -343,11 +361,7 @@ nav {
     position: relative;
     padding: 20px 20px;
     top: 50px;
-
 }
-
-
-
 
 @media screen and (max-width: 992px) {
     .content-container {

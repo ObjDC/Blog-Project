@@ -16,6 +16,7 @@ body, html {
 :root {
     --black: #292929;
     --gray: #f3f3f3;
+    --grayoutline: #e7e7e7;
     --anime: #eb4343;
     --photography: #2fcf5f;
     --lifestyle: #f3933a;
@@ -103,12 +104,12 @@ nav {
 
 .categories {
     position: sticky;
-    top: 120px;
+    top: 170px;
     background-color: var(--gray);
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 10px;
-    border: 1px solid rgb(231, 231, 231);
+    border: 1px solid var(--grayoutline);
 }
 
 .categories h3 {
@@ -195,22 +196,18 @@ nav {
 #cat1:hover {
     color: white;
     background-color: var(--anime);
-    border: 1px solid rgba(255, 255, 255, 0);
 }
 #cat2:hover {
     color: white;
     background-color: var(--photography);
-    border: 1px solid rgba(255, 255, 255, 0);
 }
 #cat3:hover {
     color: white;
     background-color: var(--lifestyle);
-    border: 1px solid rgba(255, 255, 255, 0);
 }
 #cat4:hover {
     color: white;
     background-color: var(--philanthropy);
-    border: 1px solid rgba(255, 255, 255, 0);
 }
 .categories a:hover i {
     margin-left: 20px;
@@ -307,12 +304,12 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: var(--gray);
-    border: 1px solid rgb(231, 231, 231);
+    border: 1px solid var(--grayoutline);
     border-radius: 10px;
 }
 
 .sidebar {
-    width: 30%;
+    width: 40%;
 }
 
 .nav-all-container {
@@ -369,7 +366,7 @@ nav {
     border-radius: 10px;
     max-width: 150px;
     position: relative;
-    padding: 20px 20px;
+    padding: 20px 50px;
     top: 50px;
     transition: all 0.2s;
 }

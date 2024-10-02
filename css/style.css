@@ -296,6 +296,7 @@ nav {
     display: flex;
     gap: 40px;
     padding: 40px 70px;
+    margin-bottom: 0px;
     color: white;
 }
 
@@ -358,7 +359,7 @@ nav {
 #phil {background-color: var(--philanthropy);}
 #life {background-color: var(--lifestyle);}
 #phot {background-color: var(--photography);}
-#anim {background-color: var(--anime);}
+#anim {background-color: var(--anime); border: 3px solid var(--nime)}
 
 .read-post {
     color: white;
@@ -379,10 +380,111 @@ nav {
     margin-left: 15px;
 }
 
+#about-us {
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/arch_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: var(--black);
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    border: none;
+    background-color: var(--gray);
+    border: 1px solid var(--grayoutline);
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.tab.active {
+    background-color: var(--philanthropy);
+    transform: scale(1.2);
+    color: white;
+}
+
+.tab.active i {
+    color: white;
+}
+
+.tab:hover i {
+    margin-left: 10px;
+}
+
+.tab-content {
+    max-width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.content.active {
+    display: block;
+    opacity: 1;
+}
+
+
+.statistic-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.statistic-tab {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+    background-color: var(--gray);
+    border: 1px solid var(--grayoutline);
+    border-radius: 10px;
+}
+.statistic-tab p {
+    font-size: 20px;
+    color: var(--black);
+}
 @media screen and (max-width: 992px) {
     .content-container {
         flex-direction: column;
         padding: 20px;
+        margin-bottom: 100px;
     }
 
     .sidebar {
@@ -425,6 +527,32 @@ nav {
     #contact {
         width: 100%;
         text-align: center;
+    }
+
+    .statistic-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .tab-content {
+        width: 90%;
+    }
+
+    .statistic-tab {
+        height: 130px;
+    }
+
+    #about-us {
+        height: 900px;
+    }
+
+    .tab-buttons {
+        width: 70%;
     }
 }
 

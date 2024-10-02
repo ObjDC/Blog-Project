@@ -132,21 +132,45 @@
             </div>
         </aside>
     </div>
+
+
+    <section id="about-us">
+        <h1>About us</h1>
+        <div class="tab-buttons">
+            <button class="tab active" data-tab="who-we-are">Who we are <i class="fa-solid fa-people-group"></i></button>
+            <button class="tab" data-tab="mission">Mission <i class="fa-solid fa-bullseye"></i></button>
+            <button class="tab" data-tab="approach">Approach <i class="fa-solid fa-clipboard-list"></i></button>
+            <button class="tab" data-tab="team">Team <i class="fa-solid fa-user-group"></i></button>
+            <button class="tab" data-tab="offices">Offices <i class="fa-regular fa-building"></i></button>
+        </div>
+        <div class="tab-content">
+            <p id="who-we-are" class="content active">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, enim amet ducimus ipsum, cumque eligendi nisi</p>
+            <p id="mission" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet blanditiis corrupti fuga placeat itaque labore, soluta praesen</p>
+            <p id="approach" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae labore officia cupiditate esse, non hic numquam tem</p>
+            <p id="team" class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, sint laudantium animi sed nulla quasi quo incidunt ad maior</p>
+            <p id="offices" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem omnis necessitatibus ea voluptas reiciendis hic volupt</p>
+        </div>
+        <div class="statistic-container">
+            <div class="statistic-tab">
+                <h1>10000+</h1>
+                <p>Employees</p>
+            </div>
+            <div class="statistic-tab">
+                <h1>29000+</h1>
+                <p>Blogs</p>
+            </div>
+            <div class="statistic-tab">
+                <h1>12+</h1>
+                <p>Employees</p>
+            </div>
+        </div>
+    </section>
+
+
     
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navToggle = document.querySelector('.nav-toggle');
-            const navLinksContainer = document.querySelector('.nav-links-container');
-
-            navToggle.addEventListener('click', () => {
-                navToggle.classList.toggle('active');
-                navLinksContainer.classList.toggle('active');
-            });
-        });
-
-    </script>
 
 
-    <link rel="stylesheet" href="../js/script.js">
+    <script src="../js/about-us.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 </html>

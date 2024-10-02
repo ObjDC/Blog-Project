@@ -480,6 +480,44 @@ nav {
     font-size: 20px;
     color: var(--black);
 }
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: var(--gray);
+}
+
+.footer-text-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer-text-container h1 {font-family: "Great Vibes", cursive; font-size: 50px;}
+.footer-text-container p {margin: 20px 0;}
+#author {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.footer-text-wrapper {
+    width: auto;
+    height: auto;
+}
+
+.footer-text-wrapper a {
+    padding: 10px;
+    background-color: var(--black);
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+
 @media screen and (max-width: 992px) {
     .content-container {
         flex-direction: column;

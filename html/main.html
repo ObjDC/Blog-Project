@@ -17,6 +17,8 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/37137ef7ef.js" crossorigin="anonymous"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Whisper - Blogs</title>
 </head>
 <body>
@@ -53,7 +55,7 @@
 
     <div class="content-container">
         <section class="main-content">
-            <article class="post" id="anime">
+            <article data-aos="fade-up" class="post" id="anime">
                 <div class="post-image">
                     <img src="https://www.dexerto.com/cdn-image/wp-content/uploads/2023/10/26/winter-2024-anime-1.jpg?width=1200&quality=60&format=auto" alt="">
                     <div class="category-tag anime">Anime</div>
@@ -68,7 +70,7 @@
                 <a class="read-post" id="anim" href="">Read Post <i class="fa-solid fa-arrow-right"></i></a>
             </article>
         
-            <article class="post" id="photography">
+            <article data-aos="fade-up" class="post" id="photography">
                 <div class="post-image">
                     <img src="https://i.pinimg.com/originals/5d/a4/aa/5da4aaa7192948378b2fff2a1148880c.jpg" alt="">
                     <div class="category-tag photography">Photography</div>
@@ -83,7 +85,7 @@
                 <a class="read-post" id="phot" href="">Read Post <i class="fa-solid fa-arrow-right"></i></a>
             </article>
         
-            <article class="post" id="lifestyle">
+            <article data-aos="fade-up" class="post" id="lifestyle">
                 <div class="post-image">
                     <img src="https://images.healthshots.com/healthshots/en/uploads/2022/05/11184715/Yoga-for-weight-loss.jpg" alt="">
                     <div class="category-tag lifestyle">Lifestyle</div>
@@ -98,7 +100,7 @@
                 <a class="read-post" id="life" href="">Read Post <i class="fa-solid fa-arrow-right"></i></a>
             </article>
         
-            <article class="post" id="philanthropy">
+            <article data-aos="fade-up" class="post" id="philanthropy">
                 <div class="post-image">
                     <img src="https://philanthropynw.org/sites/default/files/styles/news_16x9__1920x1080/public/content_images/news/Volunteers_FoodDrive_COVID_1920x1080.jpg?itok=bjseY-Wd" alt="">
                     <div class="category-tag philanthropy">Philanthropy</div>
@@ -134,7 +136,7 @@
     </div>
 
 
-    <section id="about-us">
+    <section data-aos="fade-up" data-aos-delay="300" id="about-us">
         <h1>About us</h1>
         <div class="tab-buttons">
             <button class="tab active" data-tab="who-we-are">Who we are <i class="fa-solid fa-people-group"></i></button>
@@ -151,15 +153,15 @@
             <p id="offices" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem omnis necessitatibus ea voluptas reiciendis hic volupt</p>
         </div>
         <div class="statistic-container">
-            <div class="statistic-tab">
+            <div data-aos="fade-up" data-aos-delay="300" class="statistic-tab">
                 <h1>10000+</h1>
                 <p>Employees</p>
             </div>
-            <div class="statistic-tab">
+            <div data-aos="fade-up" data-aos-delay="600" class="statistic-tab">
                 <h1>29000+</h1>
                 <p>Blogs</p>
             </div>
-            <div class="statistic-tab">
+            <div data-aos="fade-up" data-aos-delay="900"class="statistic-tab">
                 <h1>12+</h1>
                 <p>Employees</p>
             </div>
@@ -179,8 +181,11 @@
     </footer>
     
 
-
     <script src="../js/about-us.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

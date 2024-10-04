@@ -519,6 +519,10 @@ footer {
 
 
 @media screen and (max-width: 992px) {
+
+    .content-container {
+        background-color: orange;
+    }
     .content-container {
         flex-direction: column;
         padding: 20px;

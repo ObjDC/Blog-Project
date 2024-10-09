@@ -81,7 +81,7 @@ body, html {
     color: #888;
 }
 
-.blog-title-image {
+.blog-image {
     width: 100%;
     height: auto;
     margin: auto;
@@ -90,7 +90,7 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-.blog-title-image img {
+.blog-image img {
     width: 100%;
     height: auto;
     border-radius: 10px;

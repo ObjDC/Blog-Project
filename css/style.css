@@ -43,6 +43,10 @@ header {
     position: fixed;
     z-index: 9999999999999999999999999;
     margin: auto;
+
+    transform: translate(-50%,-50%);
+    left: 0;
+    top: 0;
 }
 
 .header-items-container {

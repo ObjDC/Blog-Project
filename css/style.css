@@ -170,6 +170,7 @@ nav {
 
 .post-image {
     position: relative;
+    overflow: hidden;
 }
 
 .post-image img {
@@ -517,7 +518,30 @@ footer {
 }
 
 
+.bron-image {
+    width: auto;
+    height: auto;
+    background-color: var(--anime);
+    position: absolute;
+    bottom: -50px;
+    left: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
 
+.bron-image a {
+    text-decoration: none;
+    color: var(--gray);
+}
+.bron-image span {
+    text-decoration: underline;
+    color: white;
+}
+
+.post-image:hover .bron-image {
+    bottom: 20px;
+}
 
 @media screen and (max-width: 992px) {
     .content-container {

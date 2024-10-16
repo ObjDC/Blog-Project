@@ -518,7 +518,7 @@ footer {
 }
 
 
-.bron-image {
+.source-image {
     width: auto;
     height: auto;
     background-color: var(--anime);
@@ -530,16 +530,16 @@ footer {
     font-size: 14px;
 }
 
-.bron-image a {
+.source-image a {
     text-decoration: none;
     color: var(--gray);
 }
-.bron-image span {
+.source-image span {
     text-decoration: underline;
     color: white;
 }
 
-.post-image:hover .bron-image {
+.post-image:hover .source-image {
     bottom: 20px;
 }
 

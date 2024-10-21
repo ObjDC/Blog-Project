@@ -521,18 +521,25 @@ footer {
 .source-image {
     width: auto;
     height: auto;
-    background-color: var(--anime);
     position: absolute;
     bottom: -50px;
     left: 10px;
-    border-radius: 5px;
-    padding: 5px 10px;
     font-size: 14px;
+}
+
+#anime-src {
+    background-color: var(--anime);
+}
+
+#photography-src {
+    background-color: var(--photography);
 }
 
 .source-image a {
     text-decoration: none;
     color: var(--gray);
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 .source-image span {
     text-decoration: underline;

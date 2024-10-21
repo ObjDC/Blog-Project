@@ -75,6 +75,14 @@ nav {
     width: 80%;
     height: 100%;
     background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
 }
 
 

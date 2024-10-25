@@ -107,6 +107,7 @@ nav {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    background-color: olivedrab;
 }
 
 .author-image {
@@ -125,6 +126,27 @@ nav {
     color: #888;
 }
 
+.test {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+.test p {
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+.test p:nth-of-type(2n) {
+    padding-bottom: 20px;
+}
+
+
+p:hover {
+    background-color: green;
+}
 
 
 @media screen and (max-width: 992px) {

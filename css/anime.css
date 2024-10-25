@@ -139,7 +139,7 @@ nav {
 }
 
 
-.test p:nth-of-type(2n) {
+.test p:nth-of-type(1n) {
     padding-bottom: 20px;
 }
 

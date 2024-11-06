@@ -562,7 +562,42 @@ footer {
     box-shadow: 0 0 8px rgba(0, 0, 0, .07);
     border-radius: 17px;
     border-top: 10px solid var(--anime);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
 }
+
+.access-container i {
+    font-size: 90px;
+    color: var(--anime);
+}
+
+.access-container h1 {
+    font-size: 25px;
+    color: var(--black);
+}
+
+.access-container button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    padding: 0px;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-access i {
+    color: var(--black);
+    font-size: 30px;
+}
+
+
+
 
 
 @media screen and (max-width: 992px) {

@@ -580,6 +580,7 @@ footer {
 .access-container h1 {
     font-size: 25px;
     color: var(--black);
+    font-weight: 400;
 }
 
 .access-container button {

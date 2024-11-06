@@ -569,6 +569,7 @@ footer {
     text-align: center;
     gap: 20px;
     padding: 20px;
+    opacity: 0;
 }
 
 .access-container i {
@@ -591,12 +592,14 @@ footer {
     cursor: pointer;
 }
 
-.btn-access i {
+#btn-access i {
     color: var(--black);
     font-size: 30px;
 }
 
-
+article a {
+    cursor: pointer;
+}
 
 
 

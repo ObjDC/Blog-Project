@@ -22,8 +22,8 @@
     <title>Whisper - Blogs</title>
 </head>
 <body>
-    <div class="access-container">
-        <button class="btn-access"><i class="fa-solid fa-xmark"></i></button>
+    <div class="access-container" id="close">
+        <button id="btn-access" onclick="close_tab()"><i class="fa-solid fa-xmark"></i></button>
         <i class="fa-solid fa-shield-halved"></i>
         <h1>You do not have sufficient permission to access this content</h1>
     </div>
@@ -75,7 +75,7 @@
                     <span class="author-name">Bauke groot</span>
                     <span class="post-date">29/04/2024</span>
                 </div>
-                <a class="read-post" id="anim" href="">Read Post <i class="fa-solid fa-arrow-right"></i></a>
+                <a onclick="open_tab()" class="read-post" id="anim">Read Post <i class="fa-solid fa-arrow-right"></i></a>
             </article>
         
             <article data-aos="fade-up" class="post" id="photography">
@@ -93,7 +93,7 @@
                     <span class="author-name">John F. Kennedy</span>
                     <span class="post-date">11/7/2024</span>
                 </div>
-                <a class="read-post" id="phot" href="">Read Post <i class="fa-solid fa-arrow-right"></i></a>
+                <a onclick="open_tab()" class="read-post" id="phot">Read Post <i class="fa-solid fa-arrow-right"></i></a>
             </article>
         
             <article data-aos="fade-up" class="post" id="lifestyle">
@@ -111,7 +111,7 @@
                     <span class="author-name">Jenny Kim</span>
                     <span class="post-date">10/1/2024</span>
                 </div>
-                <a class="read-post" id="life" href="">Read Post <i class="fa-solid fa-arrow-right"></i></a>
+                <a onclick="open_tab()" class="read-post" id="life">Read Post <i class="fa-solid fa-arrow-right"></i></a>
             </article>
         
             <article data-aos="fade-up" class="post" id="philanthropy">
@@ -129,7 +129,7 @@
                     <span class="author-name">Jimmy Beast</span>
                     <span class="post-date">9/11/2024</span>
                 </div>
-                <a class="read-post" id="phil" href="">Read Post <i class="fa-solid fa-arrow-right"></i></a>
+                <a onclick="open_tab()" class="read-post" id="phil">Read Post <i class="fa-solid fa-arrow-right"></i></a>
             </article>
         </section>
     
@@ -199,8 +199,8 @@
     
     <script src="../js/about-us.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/access.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/follow-mouse.js"></script>
     <script>
         AOS.init();
     </script>

@@ -535,6 +535,14 @@ footer {
     background-color: var(--photography);
 }
 
+#lifestyle-src {
+    background-color: var(--lifestyle);
+}
+
+#philanthropy-src {
+    background-color: var(--philanthropy);
+}
+
 .source-image a {
     text-decoration: none;
     color: var(--gray);

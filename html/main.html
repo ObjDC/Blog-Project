@@ -22,6 +22,16 @@
     <title>Whisper - Blogs</title>
 </head>
 <body>
+
+    <div class="email-popup-container" id="email-popup">
+        <button id="close-popup-button"><i class="fa-solid fa-xmark"></i></button>
+        <div class="email-data">
+            <h1><i class="fa-solid fa-share"></i> Email sent to:</h1>
+            <p id="usr-input-email">placeholder@gmail.com</p>
+        </div>
+    </div>
+
+
     <div class="access-container" id="close">
         <button id="btn-access" onclick="close_tab()"><i class="fa-solid fa-xmark"></i></button>
         <i class="fa-solid fa-shield-halved"></i>
@@ -50,7 +60,7 @@
                 <a href="">Home</a>
                 <a href="#posts-path">Blogs</a>
                 <a href="#about-us">About</a>
-                <a href="" id="contact">Contact<i class="fa-regular fa-envelope"></i></a>
+                <a href="#author" id="contact">Contact<i class="fa-regular fa-envelope"></i></a>
             </div>
         </div>
     </nav>
@@ -121,7 +131,7 @@
                     </div>
                     <img src="https://philanthropynw.org/sites/default/files/styles/news_16x9__1920x1080/public/content_images/news/Volunteers_FoodDrive_COVID_1920x1080.jpg?itok=bjseY-Wd" alt="">
                     <div class="category-tag philanthropy">Philanthropy</div>
-                </div>
+                </div>  
                 <h2>Huge philanthropy donation</h2>
                 <p>Bank of America contributes $7.8 Million to Northwest Nonprofits</p>
                 <div class="post-meta">
@@ -137,8 +147,8 @@
             <div class="subscribe-box">
                 <h2>Follow the blog.</h2>
                 <p>Get notified for your favorite blog posts and be the first to read them!</p>
-                <input type="email" placeholder="E-mail">
-                <button>Subscribe</button>
+                <input id="usr-gmail"type="email" placeholder="E-mail">
+                <button id="show-popup-button">Subscribe</button>
             </div>
             <div class="categories">
                 <h3>What do you want to read about?</h3>
@@ -200,6 +210,7 @@
     <script src="../js/about-us.js"></script>
     <script src="../js/nav.js"></script>
     <script src="../js/access.js"></script>
+    <script src="../js/email.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
